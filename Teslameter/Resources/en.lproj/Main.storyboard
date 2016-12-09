@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="CrX-JI-5mM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--TeslameterViewController-->
+        <scene sceneID="58u-1D-MtD">
+            <objects>
+                <viewController storyboardIdentifier="TeslameterViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="CrX-JI-5mM" userLabel="TeslameterViewController" customClass="TeslameterViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TJL-31-dvV"/>
+                        <viewControllerLayoutGuide type="bottom" id="Wsr-Bg-EHt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Dim-F1-SPb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jxp-VP-lg9">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="egR-9g-BDr">
+                                        <rect key="frame" x="-772" y="101" width="1920" height="466"/>
+                                        <subviews>
+                                            <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="center" image="Assembly 10mm_12.png" translatesAutoresizingMaskIntoConstraints="NO" id="10I-Ez-9Mq">
+                                                <rect key="frame" x="771" y="-118" width="378" height="668"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="668" id="sGw-k4-iQx"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999998807907104" contentMode="scaleToFill" text="--.-" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="fo0-3d-ON0">
+                                                <rect key="frame" x="771" y="-25" width="157" height="165"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="157" id="DZR-uA-jez"/>
+                                                    <constraint firstAttribute="height" constant="165" id="TaB-OT-2gr"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="96"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Se-eq-dXn" customClass="GraphView">
+                                                <rect key="frame" x="771" y="-50" width="378" height="566"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="6Se-eq-dXn" firstAttribute="trailing" secondItem="10I-Ez-9Mq" secondAttribute="trailing" id="0P4-aV-qHi"/>
+                                            <constraint firstItem="6Se-eq-dXn" firstAttribute="centerX" secondItem="egR-9g-BDr" secondAttribute="centerX" id="8R4-6w-ySD"/>
+                                            <constraint firstAttribute="bottom" secondItem="10I-Ez-9Mq" secondAttribute="bottom" constant="-84" id="9oh-Gn-t0A"/>
+                                            <constraint firstItem="6Se-eq-dXn" firstAttribute="leading" secondItem="fo0-3d-ON0" secondAttribute="leading" id="ADA-uC-4a5"/>
+                                            <constraint firstItem="6Se-eq-dXn" firstAttribute="leading" secondItem="egR-9g-BDr" secondAttribute="leading" constant="771" id="DnZ-Tx-RND"/>
+                                            <constraint firstItem="6Se-eq-dXn" firstAttribute="leading" secondItem="10I-Ez-9Mq" secondAttribute="leading" id="LP8-wM-sCy"/>
+                                            <constraint firstAttribute="bottom" secondItem="6Se-eq-dXn" secondAttribute="bottom" constant="-50" id="VF7-DQ-89j"/>
+                                            <constraint firstItem="6Se-eq-dXn" firstAttribute="centerY" secondItem="egR-9g-BDr" secondAttribute="centerY" id="Wf3-Od-MPx"/>
+                                            <constraint firstItem="fo0-3d-ON0" firstAttribute="top" secondItem="egR-9g-BDr" secondAttribute="top" constant="-25" id="dyH-LJ-wwE"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="egR-9g-BDr" firstAttribute="centerX" secondItem="Jxp-VP-lg9" secondAttribute="centerX" id="2jc-Nz-dZS"/>
+                                    <constraint firstItem="egR-9g-BDr" firstAttribute="top" secondItem="Jxp-VP-lg9" secondAttribute="top" constant="101" id="YA3-fW-y5N"/>
+                                    <constraint firstItem="egR-9g-BDr" firstAttribute="centerY" secondItem="Jxp-VP-lg9" secondAttribute="centerY" id="cdI-1q-8xs"/>
+                                    <constraint firstItem="egR-9g-BDr" firstAttribute="leading" secondItem="Jxp-VP-lg9" secondAttribute="leading" constant="-772" id="vDV-xr-D84"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Jxp-VP-lg9" secondAttribute="trailing" id="4BZ-k7-g5r"/>
+                            <constraint firstItem="Jxp-VP-lg9" firstAttribute="top" secondItem="Dim-F1-SPb" secondAttribute="top" id="ALJ-ay-yMz"/>
+                            <constraint firstItem="Jxp-VP-lg9" firstAttribute="leading" secondItem="Dim-F1-SPb" secondAttribute="leading" id="Hwp-Fj-Gt2"/>
+                            <constraint firstItem="Jxp-VP-lg9" firstAttribute="bottom" secondItem="Wsr-Bg-EHt" secondAttribute="top" id="q6z-Vo-M37"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="graphView" destination="6Se-eq-dXn" id="dME-a8-iYf"/>
+                        <outlet property="magnitudeLabel" destination="fo0-3d-ON0" id="MT9-GW-bbc"/>
+                        <outlet property="view" destination="Dim-F1-SPb" id="dtu-In-FYe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FHC-0t-HiW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="143.5" y="84.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Assembly 10mm_12.png" width="1920" height="1080"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>
